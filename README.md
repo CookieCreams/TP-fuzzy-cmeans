@@ -10,12 +10,14 @@ On initialise la matrice d’appartenance dont les valeurs sont comprises entre 
 
 ## Calcul des centres de clusters
 On calcul ensuite les centres des clusters en utilisant cette formule:
+
 ![Capture d'écran 2024-10-24 214839](https://github.com/user-attachments/assets/2013aec8-c449-4507-9487-8f2164108d8b)
 
 Elle calcule les centres du cluster en fonction de la matrice d’appartenance, des pixels de l’image et du paramètre fuzzy m.
 
 ## Mise à jour des appartenances
 Les appartenances sont mises à jour en calculant la distance euclidienne entre chaque pixel et les centres des clusters, et en ajustant les valeurs d'appartenance en conséquence .Puis on calcule le ratio entre la distance d'un pixel à un centre donné et la distance de ce même pixel à tous les autres centres. On obtient ensuite les nouvelles valeurs d’appartenance. 
+
 ![Capture d'écran 2024-10-24 235659](https://github.com/user-attachments/assets/b02eade1-79a9-4158-980e-aa175bda1ea7)
 
 
